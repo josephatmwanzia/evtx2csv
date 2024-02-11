@@ -1,3 +1,6 @@
+#For Forensic practitioners, analysing windows logs is hard. I created this python code to help convert evtx logs to csv for analysis.
+#This builds on the work of https://github.com/omerbenamram/evtx to suit analysis needs.
+
 import subprocess, os, time, sys, json
 import pandas as pd
 
