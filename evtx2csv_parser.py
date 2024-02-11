@@ -114,8 +114,9 @@ def json2csv(json_data):
 
     data.columns = new_headers # assign new headers
 
-    data = data.replace('\n','', regex=True)
-
+    data = data.replace('\n','', regex=True).replace('\t','', regex=True).replace('\r','', regex=True) # Remove special characters - \t \r \t
+    data.dropna(how= "all", axis=1, inplace= True) #Drop empty columns
+    
     return data
 
 #write converted file to new folder
