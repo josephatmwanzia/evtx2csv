@@ -33,7 +33,7 @@ else:
 if os.access(evtxd_path, os.X_OK):
     pass
 else:
-    print("[-] Please make evtxd executable by running: chmod x [path_to_evtxd]")
+    print("[-] Please make evtxd executable by running: chmod +x [path_to_evtxd]")
     print("[!] Exiting ...")
     exit()
 
